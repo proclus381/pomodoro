@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Pomodoro Deep Work — Blocker",
+  "version": "0.1.0",
+  "description": "Companion blocker for the Pomodoro Deep Work PWA. Hard-blocks distracting sites while a focus session is running.",
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestWithHostAccess", "storage", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Pomodoro Blocker"
+  },
+  "icons": {
+    "128": "icon-128.png"
+  }
+}
